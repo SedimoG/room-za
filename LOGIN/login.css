@@ -1,0 +1,74 @@
+/* login.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff9e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  background-color: #fff9e6;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: #333;
+}
+
+.btn-link {
+  text-decoration: none;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signin-btn {
+  background-color: #f2994a;
+  color: white;
+}
+
+.signin-btn:hover {
+  background-color: #c65102;
+}
+
+.signup-btn {
+  background-color: #D58A94;
+  color: white;
+}
+
+.signup-btn:hover {
+  background-color: #B53389;
+}
+
+.guest-btn {
+  display: inline-block;
+  background-color: transparent;
+  color: #555;
+  font-size: 14px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.guest-btn:hover {
+  color: white;
+  background-color: #c65102;
+}

@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffdf5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #fff9e6;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Left side (logo and tagline) */
+.header-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo-img {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+}
+
+.tagline {
+  font-size: 14px;
+  color: #f7a93a;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+/* Right side (search and donate) */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+/* Search box */
+.search-wrapper {
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  height: 40px;
+  padding: 0 40px 0 16px;
+  border: 2px solid #f7a93a;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+.search-button {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #f7a93a;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.donate-button {
+  height: 40px;
+  max-width: 600px;
+  padding: 0 20px;
+  background-color: #f2994a;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.donate-button:hover {
+  color: black;
+  background-color: #e68e00;
+}
+
+.home-button {
+  height: 40px;
+  margin: 10px;
+  max-width: 600px;
+  padding: 6px 8px;
+  background-color: #D58A94;
+  color: black;
+  border: 2px solid black;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+.home-button:hover {
+  background-color: #B53389;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .header-right {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-wrapper {
+    width: 100%;
+  }
+
+  .donate-button {
+    width: 100%;
+  }
+  .home-button {
+    width: 100%;
+  }
+
+  .header-left {
+    align-items: center;
+  }
+}
+
+/* General Page Styling */
+.accommodation-page {
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+/* Container Styling */
+.container {
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 30px;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #333;
+}
+
+.btn {
+  display: block;
+  width: 220px;
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #f7a93a;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e68e00;
+}
+
+/* Container 1 full width */
+.container-full {
+  max-width: 1600px;
+  margin: 0 auto 40px auto;
+}
+
+/* Side-by-side container row */
+.container-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* Ensure both containers stay within max width together */
+.container-row .container {
+  flex: 1 1 48%;
+}
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
+  .container-row {
+    flex-direction: column;
+  }
+
+  .container-row .container {
+    flex: 1 1 100%;
+  }
+}
+
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #4a3f35;
+  color: white;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1 1 50%;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.footer-left {
+  justify-content: flex-start;
+}
+
+.footer-right {
+  justify-content: flex-end;
+}
+
+.footer-logo {
+  font-size: 2rem;
+}
+
+.footer-logo img {
+  max-width: 80px;
+  height: auto;
+}
+
+.footer-right p {
+  font-size: 0.875rem;
+  text-align: right;
+}
