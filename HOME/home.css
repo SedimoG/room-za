@@ -173,7 +173,7 @@ body {
 
 .find-room-btn {
   display: block;
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 12px 24px;
   background-color: #f7a93a;
   color: white;
@@ -184,8 +184,24 @@ body {
   transition: background-color 0.3s ease;
 }
 
+.view-other-btn {
+  display: block;
+  margin: 10px auto;
+  padding: 12px 24px;
+  background-color: #f7a93a;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;  
+}
 
 .find-room-btn:hover {
+  background-color: #e68e00;
+}
+
+.view-other-btn:hover {
   background-color: #e68e00;
 }
 

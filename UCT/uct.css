@@ -204,32 +204,21 @@ body {
 }
 
 /* Container 1 full width */
-.container-full {
+.container {
   max-width: 1600px;
   margin: 0 auto 40px auto;
 }
 
-/* Side-by-side container row */
-.container-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  max-width: 1600px;
-  margin: 0 auto;
-}
 
 /* Ensure both containers stay within max width together */
-.container-row .container {
+.container {
   flex: 1 1 48%;
 }
 
 /* Responsive Behavior */
 @media (max-width: 768px) {
-  .container-row {
-    flex-direction: column;
-  }
 
-  .container-row .container {
+  .container {
     flex: 1 1 100%;
   }
 }
